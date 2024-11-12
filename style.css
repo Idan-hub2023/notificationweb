@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ body {
+    font-family: Arial, sans-serif;
+}
+
+.contein {
+    display: flex;
+    justify-content: space-between; 
+      align-items: center;
+    box-sizing: border-box;
+}
+
+.slide {
+    flex: 1; 
+    position: relative;
+}
+
+.slide img {
+height: 940px;
+width: 90%;
+object-fit: cover;
+position: relative;
+bottom: 0;
+}
+
+.hover {
+    position: absolute;
+    height: 924px;
+width: 90%;
+background-color: rgba(0, 0, 0, 0.336);
+opacity: 0;
+color: white;
+text-align: center;
+top: 0px;
+left: 0px;
+bottom: 0px;
+right: 0px;
+transition: 2s ease-in-out;
+&:hover{
+    opacity: 1;
+}
+}
+.hover h1{
+    margin-top: 30%;
+    color: gold;
+}
+.hover p{
+    margin-top: 3%;
+}
+
+
+.slide:hover {
+    display: block; /* Show the hover content on hover */
+}
+.inpts {
+width: 30%;
+margin-right: 70px;
+}
+
+.inpts h1 {
+    text-align: center;
+}
+
+.inpts div {
+    margin-bottom: 15px;
+}
+
+.inpts label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.inpts input[type="text"],
+.inpts input[type="password"] {
+    width: 96%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.inpts .btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inpts input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 1200%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: white;
+}
+
+.inpts input[type="submit"]:hover {
+    background-color: #0056b3;
+}
