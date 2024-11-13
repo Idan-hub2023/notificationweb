@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contein">
+<form action="" method="post">
+<div class="contein">
         <div class="slide">
             <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
             <div class="hover">
@@ -41,10 +42,17 @@
         </div>
         </div>
     </div>
+</form>
 </body>
 </html>
 <?php
-if (isset($_POST[submit])) {
-    $fname
+if (isset($_POST['submit'])) {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $password = $_POST['pass'];
+
+    //insert query
+    $query=mysqli_query($con,"INSERT INTO dat (fname,lname,email,password) values ('$fname','$lname','$email','$password') ");
 }
 ?>

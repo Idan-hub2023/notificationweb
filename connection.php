@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","dan");
+$con=mysqli_connect("localhost","root","","myc");
 // if ($con) {
 //     echo '<script>alert("connection true")</script>';
 // }
