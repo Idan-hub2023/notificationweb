@@ -61,6 +61,9 @@ if (isset($_POST['submit'])) {
     }
     else {
         $query=mysqli_query($con,"INSERT INTO dat (fname,lname,email,password) values ('$fname','$lname','$email','$password') ");
+        if ($query) {
+            header("location:index.php");
+        }
     }
 }
 ?>

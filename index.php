@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <?php
+    include("connection.php");
+    include("select.php");
+    ?>
 </head>
 <body>
-    <div class="contein">
+   <form action="" method="post">
+   <div class="contein">
         <div class="slide">
             <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
             <div class="hover">
@@ -19,11 +24,11 @@
             <h1>Login</h1>
             <div>
                 <label for="">Email</label>
-                <input type="text" name="username" id="" placeholder="username">
+                <input type="text" name="email" id="" placeholder="username">
             </div>
             <div>
                 <label for="">Password</label>
-                <input type="password" name="username" id="" placeholder="password">
+                <input type="password" name="password" id="" placeholder="password">
             </div>
             <a href="account.php">Create account?</a>
             <div class="btns">
@@ -31,5 +36,6 @@
         </div>
         </div>
     </div>
+   </form>
 </body>
 </html>
