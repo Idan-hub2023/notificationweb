@@ -20,6 +20,8 @@
             </div>
         </div>
         <div class="inpts">
+            <div class="email">
+            </div>
             <h1>Create account</h1>
             <div>
                 <label for="">first name</label>
@@ -31,7 +33,7 @@
             </div>
             <div>
                 <label for="">email</label>
-                <input type="text" name="email" id="" placeholder="username">
+                <input type="email" name="email" id="" placeholder="email">
             </div>
             <div>
                 <label for="">Password</label>
@@ -52,14 +54,13 @@ if (isset($_POST['submit'])) {
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $password = $_POST['pass'];
-    $emails=$email."@demail.dan";
 
     //insert query
     if (empty($fname) || empty($lname) || empty($email) || empty($password)) {
         echo '<script>alert("please inter full infromation");</script>';
     }
     else {
-        $query=mysqli_query($con,"INSERT INTO dat (fname,lname,email,password) values ('$fname','$lname','$emails','$password') ");
+        $query=mysqli_query($con,"INSERT INTO dat (fname,lname,email,password) values ('$fname','$lname','$email','$password') ");
     }
 }
 ?>

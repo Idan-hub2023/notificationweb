@@ -25,7 +25,7 @@
                 <label for="">Password</label>
                 <input type="password" name="username" id="" placeholder="password">
             </div>
-            <a href="">Create account?</a>
+            <a href="account.php">Create account?</a>
             <div class="btns">
             <input type="submit" value="Login" name="submit">
         </div>
