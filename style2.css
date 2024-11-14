@@ -75,7 +75,18 @@
     padding: 1rem;
     font-size: 14px;
   }
-  
+  /* slide */
+  .slide{
+    margin-top: 10%;
+    padding: 30px 30px;
+    width: 80%;
+margin-left: 10%;
+    text-align: center;
+  }
+  .slide h1{
+    color: #102894;
+    margin-bottom: 10px;
+  }
   @media (max-width: 768px) {
     .top_nav {
       display: block; 
