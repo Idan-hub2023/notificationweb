@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php 
+    include("connection.php");
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -22,8 +25,14 @@
       <input type="button" value="logout" name="logout" class="btns">
 </div>
 <div class="slide">
-    <h1>WELCOME TO COMPANY NOTIFICATION AND ANNOUCEMENT</h1>
-    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolor aut at magnam, suscipit facere iusto eum ducimus ipsa quaerat magni iure quam voluptatibus. Magnam voluptate architecto rerum mollitia delectus!</P>
+   <?php 
+    $query= mysqli_query($con,"SELECT hed,discr FROM slide");
+   while ($row=mysqli_fetch_array($query)) {
+?>
+<h1><?php echo $row['hed'];?></h1>
+<p><?php echo $row['discr'];?></p>
+<?php
+   }?>
 </div>
 
 </div>

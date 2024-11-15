@@ -1,0 +1,65 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the content */
+.contein {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.cont h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input and Textarea container */
+.inpts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input fields styling */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Textarea specific styling */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Responsive Design for mobile screens */
+@media (max-width: 768px) {
+    .contein {
+        padding: 10px;
+    }
+
+    .cont h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"], textarea {
+        font-size: 14px;
+    }
+}
