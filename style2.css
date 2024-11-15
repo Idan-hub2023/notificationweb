@@ -115,26 +115,12 @@ margin-left: 10%;
       padding: 15px;
     }
   }
-  @media all {
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f7fc;
-        color: #333;
-    }
-
-    .card-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%;
-      max-width: 1200px;
-      padding: 20px;
+    .cards {
+display: flex;
+padding: 20px 20px;
+margin-left: 30px;
+justify-content: center;
   }
 
   .card1 {
@@ -165,7 +151,7 @@ margin-left: 10%;
 
   /* Responsive Design */
   @media (max-width: 768px) {
-      .card-container {
+      .cards{
           flex-direction: column;
           gap: 20px;
       }
@@ -185,4 +171,3 @@ margin-left: 10%;
           width: 100%; /* Full width on small screens */
       }
   }
-}
