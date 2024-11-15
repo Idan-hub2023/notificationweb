@@ -25,6 +25,24 @@
     <h1>WELCOME TO COMPAN NOTIFICATIONAND AND ANNOUCEMENT</h1>
     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolor aut at magnam, suscipit facere iusto eum ducimus ipsa quaerat magni iure quam voluptatibus. Magnam voluptate architecto rerum mollitia delectus!</P>
 </div>
+<div class="cards">
+    <div class="card1">
+        <h1>services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
+    </div>
+    <div class="card1">
+        <h1>services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
+    </div>
+    <div class="card1">
+        <h1>services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
+    </div>
+    <div class="card1">
+        <h1>services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
+    </div>
+</div>
 </div>
 </body>
 </html>
