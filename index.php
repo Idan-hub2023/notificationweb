@@ -14,7 +14,6 @@
    <form action="" method="post">
    <div class="contein">
         <div class="slide">
-            <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
             <div class="hover">
                 <h1>WELCOME TO THE NOTIFICATION </h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam possimus dignissimos culpa nostrum corrupti nisi cumque consequuntur</p>

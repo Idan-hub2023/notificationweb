@@ -1,110 +1,139 @@
-@media all{
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
-     body {
-        font-family: Arial, sans-serif;
-    }
-    
-    .contein {
-        display: flex;
-        justify-content: space-between; 
-          align-items: center;
+@media all {
+    * {
+        padding: 0;
+        margin: 0;
         box-sizing: border-box;
     }
-    
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fc;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contein {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 1200px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 40px;
+        margin-left: 60px;
+    }
+
     .slide {
-        flex: 1; 
-        position: relative;
+        flex: 1;
+        padding-right: 40px;
     }
-    
-    .slide img {
-        height: 637px;
-        width: 80%;
-    object-fit: cover;
-    position: relative;
-    bottom: 0;
+    .hover h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: blue;
     }
-    
-    .hover {
-        position: absolute;
-        height: 637px;
-        width: 80%;
-    background-color: rgba(0, 0, 0, 0.336);
-    opacity: 0;
-    color: white;
-    text-align: center;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    transition: 2s ease-in-out;
-    &:hover{
-        opacity: 1;
+
+    .hover p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
     }
-    }
-    .hover h1{
-        margin-top: 30%;
-        color: gold;
-    }
-    .hover p{
-        margin-top: 3%;
-    }
-    
-    
-    .slide:hover {
-        display: block; /* Show the hover content on hover */
-    }
+
     .inpts {
-    width: 30%;
-    margin-right: 100px;
+        flex: 1.5;
+        padding-left: 40px;
     }
-    
+
     .inpts h1 {
         text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #007bff;
     }
-    
+
     .inpts div {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
-    
+
     .inpts label {
         display: block;
-        margin-bottom: 7px;
+        margin-bottom: 8px;
         font-weight: bold;
-        color: rgb(68, 58, 3);
+        color: #333;
     }
-    
+
     .inpts input[type="text"],
     .inpts input[type="password"],
     .inpts input[type="email"] {
-        width: 96%;
-        padding: 10px;
+        width: 100%;
+        padding: 12px;
         font-size: 16px;
         border-radius: 5px;
         border: 1px solid #ccc;
         outline: none;
+        transition: border-color 0.3s ease;
     }
-    
+
+    .inpts input[type="text"]:focus,
+    .inpts input[type="password"]:focus,
+    .inpts input[type="email"]:focus {
+        border-color: #007bff;
+    }
+
     .inpts .btns {
-        display: flex;
-        justify-content: space-between;
+        text-align: center;
     }
-    
+
     .inpts input[type="submit"] {
-        padding: 10px 20px;
+        padding: 12px 25px;
         font-size: 16px;
         cursor: pointer;
-        width: 1200%;
+        width: 100%;
         border-radius: 5px;
-        border: 1px solid #ccc;
+        border: 1px solid #007bff;
         background-color: #007bff;
         color: white;
+        transition: background-color 0.3s ease;
     }
-    
+    .hover input[type="submit"] {
+        padding: 12px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #007bff;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
     .inpts input[type="submit"]:hover {
         background-color: #0056b3;
     }
-    
+
+    .inpts input[type="submit"]:active {
+        background-color: #003f6e;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .contein {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        .inpts {
+            padding-left: 0;
+        }
+    }
 }
