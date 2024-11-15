@@ -57,5 +57,62 @@
     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolor aut at magnam, suscipit facere iusto eum ducimus ipsa quaerat magni iure quam voluptatibus. Magnam voluptate architecto rerum mollitia delectus!</P>
     </div>
 </div>
+<div class="worker">
+    <div class="work">
+        <div class="slide">
+            <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
+        </div>
+        <div class="disc">
+            <h2>name</h2>
+            <p>dipaltement</p>
+        </div>
+    </div>
+    <div class="work">
+        <div class="slide">
+            <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
+        </div>
+        <div class="disc">
+            <h2>name</h2>
+            <p>dipaltement</p>
+        </div>
+    </div>
+    <div class="work">
+        <div class="slide">
+            <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
+        </div>
+        <div class="disc">
+            <h2>name</h2>
+            <p>dipaltement</p>
+        </div>
+    </div>
+    <div class="work">
+        <div class="slide">
+            <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
+        </div>
+        <div class="disc">
+            <h2>name</h2>
+            <p>dipaltement</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IG</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Company Name. All Rights Reserved.</p>
+    </div>
+</footer>
+r>
 </body>
 </html>
