@@ -14,18 +14,21 @@
    </div>
    <div class="links">
     <a href="http://">Home</a>
-    <a href="http://">privet notificatio</a>
-    <a href="http://">puplic notificatio</a>
+    <a href="http://">privet notification</a>
+    <a href="http://">puplic notification</a>
     <a href="http://">news</a>
    </div>
       <!-- buttons -->
       <input type="button" value="logout" name="logout" class="btns">
 </div>
 <div class="slide">
-    <h1>WELCOME TO COMPAN NOTIFICATIONAND AND ANNOUCEMENT</h1>
+    <h1>WELCOME TO COMPANY NOTIFICATION AND ANNOUCEMENT</h1>
     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolor aut at magnam, suscipit facere iusto eum ducimus ipsa quaerat magni iure quam voluptatibus. Magnam voluptate architecto rerum mollitia delectus!</P>
 </div>
 
+</div>
+<div class="hd">
+    <h1>Our service</h1>
 </div>
 <div class="cards  style="display:flex;">
     <div class="card1">
@@ -43,6 +46,15 @@
     <div class="card1">
         <h1>services</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
+    </div>
+</div>
+<div class="about">
+    <div class="img">
+        <img src="pexels-daliladalprat-2055500.jpg" alt="" srcset="">
+    </div>
+    <div class="cont">
+    <h1>About us</h1>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolor aut at magnam, suscipit facere iusto eum ducimus ipsa quaerat magni iure quam voluptatibus. Magnam voluptate architecto rerum mollitia delectus!</P>
     </div>
 </div>
 </body>
