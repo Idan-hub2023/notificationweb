@@ -39,23 +39,18 @@
 <div class="hd">
     <h1>Our service</h1>
 </div>
-<div class="cards  style="display:flex;">
-    <div class="card1">
-        <h1>services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
+<div class="cards">
+    <?php
+    $query= mysqli_query($con,"SELECT * FROM service");
+    while ($row=mysqli_fetch_array($query)) {
+        ?>
+         <div class="card1">
+        <h1><?php echo $row['name'];?></h1>
+        <p><?php echo $row['discr'];?></p>
     </div>
-    <div class="card1">
-        <h1>services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
-    </div>
-    <div class="card1">
-        <h1>services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
-    </div>
-    <div class="card1">
-        <h1>services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatum vel, eum quidem unde rem voluptas</p>
-    </div>
+        <?php
+    }
+    ?>
 </div>
 <div class="about">
     <div class="img">
