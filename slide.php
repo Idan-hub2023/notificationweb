@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php 
-    include("connection.php");
-    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style3.css">
+    <title>Edit Slide</title>
+    <link rel="stylesheet" href="slide.css">
 </head>
 <body>
+    <?php 
+    include("connection.php");
+
+    // Check if ID is provided in the URL
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+
+        // Select query to fetch data
+        $query = mysqli_query($con, "SELECT * FROM slide WHERE id='$id'");
+        $row = mysqli_fetch_assoc($query); // Fetch the row
+
+        if ($row) {
+            $hed = $row['hed'];
+            $discr = $row['discr'];
+        } else {
+            die("No record found with ID $id.");
+        }
+    }
+
+    // Handle form submission
+    if (isset($_POST['update'])) {
+        $new_hed = $_POST['hed'];
+        $new_discr = $_POST['discr'];
+
+        // Update query
+        $update_query = mysqli_query($con, "UPDATE slide SET hed='$new_hed', discr='$new_discr' WHERE id='$id'");
+
+        if ($update_query) {
+            header("location:table.php");
+        } else {
+            echo "Failed to update data.";
+        }
+    }
+    ?>
+
+    <!-- Form -->
     <form action="" method="post">
-    <div class="contein">
-        <div class="cont">
-            <h1>welcome to slide change</h1>
-        </div>
-        <div class="inpts">
-            <input type="text" name="hed" id="" placeholder="heads">
-            <br>
-            <textarea name="mssg" id="" placeholder="content"></textarea>
-            <br>
-            <input type="submit" value="send" name="mss">
-        </div>
-    </div>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>header</th>
-                    <th>discription</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                $sel=mysqli_query($con,"SELECT * FROM slide") ;
-                while ($row=mysqli_fetch_array($sel)) {?>
-                    <tr>
-                    <td><?php echo $row['id']?></td>
-                    <td><?php echo $row['hed']?></td>
-                    <td><?php echo $row['discr']?></td>
-                    <td><a href="delet.php?id"></a></td>
-                </tr>
-          
-               <?php
-               }
-               ?>
-                ?>
-            </tbody>
-        </table>
-    </div>
+        <label for="hed">Header:</label>
+        <input type="text" name="hed" id="hed" value="<?php echo $hed; ?>" required>
+        <br><br>
+        <label for="discr">Description:</label>
+        <textarea name="discr" id="discr" required><?php echo $discr; ?></textarea>
+        <br><br>
+        <input type="submit" name="update" value="Update">
     </form>
 </body>
 </html>
-<?php
-if (isset($_POST['mss'])) {
-$h=$_POST['hed'];
-$mss=$_POST['mssg'];
-
-//insert query
-$query=mysqli_query($con,"INSERT INTO slide (hed,discr) VALUES ('$h','$mss')");
-if ($query) {
-    echo "data inserted";
-}
-else {
-    echo"not inserted";
-}
-}
-?>
