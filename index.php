@@ -9,6 +9,9 @@
     include("connection.php");
     include("select.php");
     ?>
+    <script>
+        window.history.forward();
+    </script>
 </head>
 <body>
    <form action="" method="post">
