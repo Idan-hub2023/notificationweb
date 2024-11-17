@@ -21,8 +21,7 @@
     <a href="http://">puplic notification</a>
     <a href="http://">news</a>
    </div>
-      <!-- buttons -->
-      <input type="button" value="logout" name="logout" class="btns">
+      <input type="button" value="logout" name="sub" class="btns">
 </div>
 <div class="slide">
    <?php 
@@ -117,6 +116,10 @@
         <p>&copy; 2024 Company Name. All Rights Reserved.</p>
     </div>
 </footer>
-r>
 </body>
 </html>
+<?php 
+if (isset($_POST['sub'])) {
+  header("location:index.php");
+}
+?>

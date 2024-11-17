@@ -15,11 +15,11 @@
         $id = $_GET['id'];
 
         // Select query to fetch data
-        $query = mysqli_query($con, "SELECT * FROM slide WHERE id='$id'");
+        $query = mysqli_query($con, "SELECT * FROM service WHERE id='$id'");
         $row = mysqli_fetch_assoc($query); // Fetch the row
 
         if ($row) {
-            $hed = $row['hed'];
+            $hed = $row['name'];
             $discr = $row['discr'];
         } else {
             die("No record found with ID $id.");
@@ -28,11 +28,11 @@
 
     // Handle form submission
     if (isset($_POST['update'])) {
-        $new_hed = $_POST['hed'];
+        $new_hed = $_POST['name'];
         $new_discr = $_POST['discr'];
 
         // Update query
-        $update_query = mysqli_query($con, "UPDATE slide SET hed='$new_hed', discr='$new_discr' WHERE id='$id'");
+        $update_query = mysqli_query($con, "UPDATE `service` SET `name`='$new_hed', `discr`='$new_discr' WHERE id='$id'");
 
         if ($update_query) {
             header("location:table.php");
